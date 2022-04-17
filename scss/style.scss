@@ -684,7 +684,9 @@ div[class*="__container"] {
 	&__item {
 		padding: 0 15px;
 		flex: 0 1 33.333%;
-		min-width: 280px;
+		min-width: 305px;
+		display: flex;
+		flex-direction: column;
 	}
 	// .chefs-page__chef
 	&__chef {
@@ -733,6 +735,9 @@ div[class*="__container"] {
 	&__dishes {
 		display: flex;
 		column-gap: 30px;
+		overflow: auto;
+		flex-wrap: wrap;
+		row-gap: 30px;
 	}
 	&__box {
 	}
@@ -791,6 +796,7 @@ div[class*="__container"] {
 		row-gap: 30px;
 		flex-direction: column;
 		&_big {
+			margin: 0 auto;
 		}
 	}
 	// .recipes-page__bigblock
@@ -808,9 +814,11 @@ div[class*="__container"] {
 	overflow: hidden;
 	min-width: 400px;
 	max-width: 540px;
+	margin: 0 auto;
+	@media (max-width: 600px) {
+		min-width: 305px;
+	}
 	&__content {
-		position: relative;
-		z-index: 6;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -850,6 +858,7 @@ div[class*="__container"] {
 			transition: 0.3s;
 			background: rgb(0, 0, 0);
 			box-shadow: 0 0 19px 1px white;
+			z-index: 10;
 		}
 	}
 	&__box {
@@ -878,6 +887,8 @@ div[class*="__container"] {
 		align-items: center;
 		justify-content: center;
 		transition: 0.3s;
+		position: relative;
+		z-index: 1;
 		&:hover {
 			transition: 0.3s;
 			color: rgb(0, 0, 0);
@@ -892,6 +903,8 @@ div[class*="__container"] {
 		font-size: 14px;
 		line-height: 214%;
 		color: #ffffff;
+		position: relative;
+		z-index: 1;
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
@@ -900,6 +913,8 @@ div[class*="__container"] {
 		font-size: 24px;
 		line-height: 167%;
 		color: #ffffff;
+		position: relative;
+		z-index: 1;
 		&:not(:last-child) {
 			margin-bottom: 45px;
 		}
@@ -908,12 +923,16 @@ div[class*="__container"] {
 		font-size: 14px;
 		line-height: 214%;
 		color: #ffffff;
+		position: relative;
+		z-index: 1;
 		&:not(:last-child) {
 			margin-bottom: 60px;
 		}
 	}
 	// .bigblock-recipes-page__active
 	&__active {
+		position: relative;
+		z-index: 1;
 	}
 	// .recipes-page__image
 	&__image {
@@ -998,6 +1017,9 @@ div[class*="__container"] {
 		.smallblock-recipes-page__date {
 			color: #1a1a1a;
 		}
+		.smallblock-recipes-page__picture {
+			opacity: 0;
+		}
 	}
 	&__content {
 		position: relative;
@@ -1022,6 +1044,8 @@ div[class*="__container"] {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 15px;
 	}
 	// .smallblock-recipes-page__box
 	&__box {
