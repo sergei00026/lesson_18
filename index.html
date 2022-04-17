@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 18 - SCSS - выполнил Serjio (Сергей)#3941</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="" class="header__logo">
+							<img src="img/header/Logo.svg" alt="logo-img" class="header__icon">
+							<img src="img/header/HEALTHY-SWITCHER.svg" alt="logo-text" class="header__textlogo">
+						</a>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="" class="header__link">Menu</a>
+								</li>
+								<li class="header__item">
+									<a href="" class="header__link">Recipes</a>
+								</li>
+								<li class="header__item">
+									<a href="" class="header__link">Chefs</a>
+								</li>
+								<li class="header__item">
+									<a href="" class="header__link">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<!-- <section class="page__first first-page">
+					<div class="first-page__container">
+						<div class="first-page__box">
+							<h1 class="first-page__heading">Your <span>favourite food</span>
+								delivered hot & fresh</h1>
+							<div class="first-page__subheading">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.</div>
+							<a href="" class="first-page__btn btn">Order Now</a>
+							<div class="first-page__body">
+								<div class="first-page__item">
+									<img src="img/first/watch_later.svg" alt="icon" class="first-page__icon">
+									<div class="first-page__info">Today 10:00 am - 7:00 pm</div>
+									<div class="first-page__subinfo">Working hours</div>
+								</div>
+								<div class="first-page__item">
+									<img src="img/first/near_me.svg" alt="icon" class="first-page__icon">
+									<div class="first-page__info">Velyka Vasylkivska 100</div>
+									<div class="first-page__subinfo">Get Directions</div>
+								</div>
+								<div class="first-page__item">
+									<img src="img/first/call.svg" alt="icon" class="first-page__icon">
+									<div class="first-page__info">+38 (063)833 24 15</div>
+									<div class="first-page__subinfo">Call Online</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__basic basic-page">
+					<div class="basic-page__container">
+						<div class="basic-page__box">
+							<h2 class="basic-page__heading"><span>The Basics Of Healthy Food</span></h2>
+							<div class="basic-page__subheading">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</div>
+							<div class="basic-page__body">
+								<a href="" class="basic-page__left"><img src="img/basic/arrow.svg" alt="arrow"></a>
+								<div class="basic-page__image-left _ibg">
+									<img src="img/basic/left.jpg" alt="pic" class="basic-page__picture">
+								</div>
+								<div class="basic-page__image-right _ibg">
+									<img src="img/basic/right.jpg" alt="pic" class="basic-page__picture">
+								</div>
+								<a href="" class="basic-page__right"><img src="img/basic/arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__works works-page">
+					<div class="works-page__container">
+						<div class="works-page__title title-block">
+							<h2 class="title-block__title"><span>How it works</span></h2>
+							<div class="title-block__line"></div>
+						</div>
+						<div class="works-page__body">
+							<div class="works-page__element">
+								<div class="works-page__content">
+									<div class="works-page__heading">Pick meals
+									</div>
+									<div class="works-page__text">Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.</div>
+								</div>
+							</div>
+							<div class="works-page__element">
+								<div class="works-page__content">
+									<div class="works-page__heading">Choose how often</div>
+									<div class="works-page__text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</div>
+								</div>
+							</div>
+							<div class="works-page__element">
+								<div class="works-page__content">
+									<div class="works-page__heading">fast deliveries</div>
+									<div class="works-page__text">Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.</div>
+								</div>
+							</div>
+							<div class="works-page__element">
+								<div class="works-page__content">
+									<div class="works-page__heading">tasty meals</div>
+									<div class="works-page__text">Gobble makes cooking fast, so you have more time to unwind and be with family.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__dish dish-page">
+					<div class="dish-page__container">
+						<div class="dish-page__title title-block">
+							<h2 class="title-block__title dish-page__title_decor"><span>Dish Of The Day</span></h2>
+							<div class="title-block__line"></div>
+						</div>
+						<div class="dish-page__body">
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/01.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/02.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/03.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/04.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/05.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dish-page__element">
+								<div class="dish-page__content">
+									<a href="" class="dish-page__link _ibg">
+										<img src="img/dish/06.jpg" alt="dish">
+									</a>
+									<div class="dish-page__block">
+										<div class="dish-page__heading">Featured Meal</div>
+										<div class="dish-page__subheading">Served with french fries + drink</div>
+										<div class="dish-page__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+										<div class="dish-page__box box-dish-page">
+											<div class="box-dish-page__box">
+												<div class="box-dish-page__stars">
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-half.png" alt="star">
+													</div>
+													<div class="box-dish-page__star">
+														<img src="img/dish/star-empty.png" alt="star">
+													</div>
+												</div>
+												<div class="box-dish-page__num">12</div>
+											</div>
+											<div class="box-dish-page__btn btn btn_item">ORDER</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section> -->
+				<section class="page__chefs chefs-page">
+					<div class="chefs-page__container">
+						<div class="chefs-page__title title-block">
+							<h2 class="title-block__title chefs-page__title_decor"><span>This month's chefs</span></h2>
+							<div class="title-block__line"></div>
+						</div>
+						<div class="chefs-page__body">
+							<div class="chefs-page__item">
+								<div class="chefs-page__chef">
+									<div class="chefs-page__icon _ibg">
+										<img src="img/chefs/Avatar01.jpg" alt="avatar">
+									</div>
+									<div class="chefs-page__data">
+										<div class="chefs-page__name">Gregory Flores</div>
+										<div class="chefs-page__specialization">Chef of the cold</div>
+									</div>
+								</div>
+								<div class="chefs-page__dishes">
+									<div class="chefs-page__img-big _ibg">
+										<img src="img/chefs/big-img-01.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-01-01.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-01-02.jpg" alt="dish">
+									</div>
+								</div>
+							</div>
+							<div class="chefs-page__item">
+								<div class="chefs-page__chef">
+									<div class="chefs-page__icon _ibg">
+										<img src="img/chefs/Avatar02.jpg" alt="avatar">
+									</div>
+									<div class="chefs-page__data">
+										<div class="chefs-page__name">Annette Cooper</div>
+										<div class="chefs-page__specialization">Chef of the hot</div>
+									</div>
+								</div>
+								<div class="chefs-page__dishes">
+									<div class="chefs-page__img-big _ibg">
+										<img src="img/chefs/big-img-02.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-02-01.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-02-02.jpg" alt="dish">
+									</div>
+								</div>
+							</div>
+							<div class="chefs-page__item">
+								<div class="chefs-page__chef">
+									<div class="chefs-page__icon _ibg">
+										<img src="img/chefs/Avatar03.jpg" alt="avatar">
+									</div>
+									<div class="chefs-page__data">
+										<div class="chefs-page__name">Greg Fox</div>
+										<div class="chefs-page__specialization">Сhef macro kitchen</div>
+									</div>
+								</div>
+								<div class="chefs-page__dishes">
+									<div class="chefs-page__img-big _ibg">
+										<img src="img/chefs/big-img-03.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-03-01.jpg" alt="dish">
+									</div>
+									<div class="chefs-page__img-small _ibg">
+										<img src="img/chefs/img-03-02.jpg" alt="dish">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__recipes recipes-page">
+					<div class="recipes-page__container">
+						<div class="recipes-page__title title-block">
+							<h2 class="title-block__title recipes-page__title_decor"><span>Recipes From Our Chefs</span></h2>
+							<div class="title-block__line"></div>
+						</div>
+						<div class="recipes-page__body">
+							<div class="recipes-page__element recipes-page__element_big">
+								<div class="recipes-page__bigblock bigblock-recipes-page">
+									<div class="bigblock-recipes-page__content">
+										<a href="" class="bigblock-recipes-page__arrow"><img src="img/recipes/arrow.svg" alt="arrow"></a>
+										<div class="bigblock-recipes-page__box">
+											<a href="" class="bigblock-recipes-page__title">breakfast</a>
+											<div class="bigblock-recipes-page__date">05 Jul 2016</div>
+											<div class="bigblock-recipes-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+											<div class="bigblock-recipes-page__autor">Jason Keller</div>
+											<div class="bigblock-recipes-page__active active">
+												<div class="active__views">
+													<a href="" class="active__image">275</a>
+												</div>
+												<div class="active__comments">
+													<a href="" class="active__image">12</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="bigblock-recipes-page__image">
+										<img src="img/recipes/bg-big.jpg" alt="big" class="bigblock-recipes-page__icon">
+									</a>
+								</div>
+							</div>
+							<div class="recipes-page__element">
+								<div class="recipes-page__smallblock smallblock-recipes-page">
+									<div class="smallblock-recipes-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+									<div class="smallblock-recipes-page__block">
+										<div class="smallblock-recipes-page__box">
+											<a href="" class="smallblock-recipes-page__link">lunch</a>
+											<div class="smallblock-recipes-page__date">07 Jan 2016</div>
+										</div>
+										<div class="smallblock-recipes-page__active active">
+											<div class="active__views">
+												<a href="" class="active__image">275</a>
+											</div>
+											<div class="active__comments">
+												<a href="" class="active__image">12</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recipes-page__smallblock smallblock-recipes-page">
+									<div class="smallblock-recipes-page__content">
+										<div class="smallblock-recipes-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+										<div class="smallblock-recipes-page__block">
+											<div class="smallblock-recipes-page__box">
+												<a href="" class="smallblock-recipes-page__link">dinner</a>
+												<div class="smallblock-recipes-page__date">07 Jan 2016</div>
+											</div>
+											<div class="smallblock-recipes-page__active active">
+												<div class="active__views">
+													<a href="" class="active__image">275</a>
+												</div>
+												<div class="active__comments">
+													<a href="" class="active__image">12</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="smallblock-recipes-page__picture"><img src="img/recipes/bg-small.jpg" alt="bg" class="smallblock-recipes-page__image"></div>
+								</div>
+								<div class="recipes-page__smallblock smallblock-recipes-page">
+									<div class="smallblock-recipes-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+									<div class="smallblock-recipes-page__block">
+										<div class="smallblock-recipes-page__box">
+											<a href="" class="smallblock-recipes-page__link">sweets</a>
+											<div class="smallblock-recipes-page__date">07 Jan 2016</div>
+										</div>
+										<div class="smallblock-recipes-page__active active">
+											<div class="active__views">
+												<a href="" class="active__image">275</a>
+											</div>
+											<div class="active__comments">
+												<a href="" class="active__image">12</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">footer</footer>
+		</div>
+	</body>
+</html>

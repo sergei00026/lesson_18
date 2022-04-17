@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap");
+@font-face {
+	font-family: "Helvetica Neue 55 Roman";
+	src: url("../fonts/helveticaneue-roman.otf") format("otf");
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2"), url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeueBlackCondensed.woff2") format("woff2"), url("../fonts/HelveticaNeueBlackCondensed.woff") format("woff");
+	font-weight: 900;
+	font-display: swap;
+}
