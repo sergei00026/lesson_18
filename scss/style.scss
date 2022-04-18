@@ -177,6 +177,9 @@ div[class*="__container"] {
 	// .page__social
 	&__social {
 	}
+	// .page__info
+	&__info {
+	}
 }
 .first-page {
 	background: linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url("../img/first/placeholder.jpg") right bottom / cover no-repeat;
@@ -1133,11 +1136,15 @@ div[class*="__container"] {
 /* ===================================== */
 
 .social-page {
+	padding: 60px 0px 120px 0px;
 	// .social-page__container
 	&__container {
 	}
 	// .social-page__title
 	&__title {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
 		// .social-page__title_decor
 		&_decor {
 			&::before {
@@ -1149,11 +1156,20 @@ div[class*="__container"] {
 	&__body {
 		display: flex;
 		margin: 0 -15px;
+		flex-wrap: wrap;
+		row-gap: 30px;
+		@media (max-width: 626px) {
+			flex-wrap: nowrap;
+			overflow: auto;
+		}
 	}
 	// .social-page__element
 	&__element {
 		padding: 0 15px;
-		flex: 0 0 33.333333%;
+		flex: 1 0 33.333333%;
+		@media (max-width: 626px) {
+			flex: 0 0 92%;
+		}
 	}
 	// .social-page__content
 	&__content {
@@ -1169,7 +1185,7 @@ div[class*="__container"] {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 25px;
+		padding: 25px 25px 24px 25px;
 		position: sticky;
 		top: 0;
 		left: 0;
@@ -1197,6 +1213,13 @@ div[class*="__container"] {
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
+		transition: 0.3s;
+		&:hover {
+			transition: 0.3s;
+			background: rgb(0, 0, 0);
+			box-shadow: 0 0 19px 1px white;
+			z-index: 10;
+		}
 	}
 	&__facebook {
 		border-radius: 50%;
@@ -1209,6 +1232,32 @@ div[class*="__container"] {
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
+		transition: 0.3s;
+		&:hover {
+			transition: 0.3s;
+			background: rgb(0, 0, 0);
+			box-shadow: 0 0 19px 1px white;
+			z-index: 10;
+		}
+	}
+	&__instagram {
+		border-radius: 50%;
+		border: 2px solid #303030;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		transition: 0.3s;
+		&:hover {
+			transition: 0.3s;
+			background: rgb(0, 0, 0);
+			box-shadow: 0 0 19px 1px white;
+			z-index: 10;
+		}
 	}
 	// .social-page__name-soc
 	&__name-soc {
@@ -1220,6 +1269,7 @@ div[class*="__container"] {
 	&__btn {
 		padding: 5px 19px;
 		min-height: 40px;
+		white-space: nowrap;
 	}
 	// .social-page__line
 	&__line {
@@ -1229,7 +1279,7 @@ div[class*="__container"] {
 	}
 	// .social-page__description
 	&__description {
-		padding: 19px 40px 20px 30px;
+		padding: 20px 40px 20px 30px;
 		& > :not(:last-child) {
 			margin-bottom: 10px;
 		}
@@ -1253,11 +1303,100 @@ div[class*="__container"] {
 		line-height: 214%;
 		color: #34c759;
 	}
+	// .social-page__photo
+	&__photo {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	// .social-page__img
+	&__img {
+		// flex: 0 0 33.333%;
+		width: 33.333%;
+		object-fit: cover;
+	}
 }
 
 /* ===================================== */
 
+.info-page {
+	background: #252525;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 30px 0px;
+	border-bottom: 2px #303030 solid;
+	// .info-page__body
+	&__body {
+		display: flex;
+		height: 100%;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		margin: 0 -20px;
+	}
+	// .info-page__item
+	&__item {
+		flex: 1 1 33.333%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 20px;
+		min-width: 210px;
+	}
+	// .info-page__icon
+	&__icon {
+		flex: 0 1 18px;
+		max-width: 21px;
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+	// .info-page__info
+	&__info {
+		@include line-hight(30, 16);
+		color: #ffffff;
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	// .info-page__subinfo
+	&__subinfo {
+		font-size: 14px;
+		@include line-hight(30, 14);
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
 /* ===================================== */
+.footer {
+	background: #252525;
+	padding: 30px 0px;
+	// .footer__container
+	&__container {
+	}
+	// .footer__logo
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		&:not(:last-child) {
+			margin: 0px 0px 12px 0px;
+		}
+	}
+	// .footer__icon
+	&__icon {
+		&:not(:last-child) {
+			margin: 0px 9px 0px 0px;
+		}
+	}
+	// .footer__textlogo
+	&__textlogo {
+	}
+	// .footer__copy
+	&__copy {
+		text-align: center;
+		font-size: 12px;
+		line-height: 150%;
+		color: #737373;
+	}
+}
+
 /* ===================================== */
 
 /* ===================================== */
