@@ -805,7 +805,7 @@ div[class*="__container"] {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
-  max-width: 350px;
+  max-width: 570px;
 }
 
 .dish-page__content {
